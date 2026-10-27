@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Rinku Goyal | IoT Developer Portfolio</title>
+<meta name="description" content="Portfolio of Rinku Goyal, B.Voc IoT student at Dayalbagh Educational Institute, Agra.">
+<meta name="theme-color" content="#07080a">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;600&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div id="loader" role="status" aria-live="polite">
+  <div class="ring" aria-hidden="true"></div>
+  <p id="loader-msg">Booting sensors…</p>
+</div>
+
+<a class="skip" href="#main">Skip to content</a>
+<header class="nav">
+  <a href="#hero" class="brand">Rinku Goyal</a>
+  <button class="menu-btn" id="menu-btn" aria-expanded="false" aria-controls="links" aria-label="Open menu"><span></span><span></span></button>
+  <nav id="links" aria-label="Main">
+    <a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#education">Education</a><a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main id="main">
+<section id="hero">
+  <div class="spot" aria-hidden="true"></div>
+  <div class="hero-copy">
+    <p class="kicker">Rinku Goyal</p>
+    <h1>IoT Developer | Programmer | Data Analytics Enthusiast</h1>
+    <p class="lead">B.Voc IoT student learning to connect hardware, software and data, one small project at a time.</p>
+    <div class="actions"><a class="btn primary" href="#projects">Explore My Work</a><a class="btn" href="#contact">Contact Me</a></div>
+  </div>
+  <div class="stage" id="stage">
+    <div class="frame" aria-hidden="true"></div>
+    <div id="scene" role="img" aria-label="Animated 3D sensor node floating inside a display frame"></div>
+    <div class="fallback" id="fallback" hidden><div class="fb-orb" aria-hidden="true"></div><p>3D view unavailable on this device.</p></div>
+  </div>
+  <a class="scroll-ind" href="#about" aria-label="Scroll to About"><span></span></a>
+</section>
+
+<section id="about" class="sec">
+  <h2 data-reveal>About me</h2>
+  <div class="grid two">
+    <p data-reveal class="card tilt">I'm a B.Voc Internet of Things student interested in the space where hardware, software and data meet. I'm learning programming, exploring IoT systems and building practical projects to understand how connected devices collect and use information.</p>
+    <p data-reveal class="card tilt">My goal is to become an IoT engineer with strong software and data analytics skills. I enjoy modern technology, and I'm building the habit of turning what I learn into small, finished projects.</p>
+  </div>
+</section>
+
+<section id="skills" class="sec">
+  <h2 data-reveal>Skills</h2>
+  <div class="grid three">
+    <article class="card tilt" data-reveal><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m8 7-5 5 5 5M16 7l5 5-5 5M14 4l-4 16"/></svg><h3>Programming</h3><ul><li>Python</li><li>SQL</li></ul></article>
+    <article class="card tilt" data-reveal><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg><h3>Data analytics</h3><ul><li>Excel</li><li>Power BI</li><li>Tableau</li></ul></article>
+    <article class="card tilt" data-reveal><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="7" y="7" width="10" height="10" rx="1"/><path d="M9 3v4M15 3v4M9 17v4M15 17v4M3 9h4M3 15h4M17 9h4M17 15h4"/></svg><h3>Technology</h3><ul><li>IoT fundamentals</li><li>Computer networks</li><li>Embedded systems (learning)</li></ul></article>
+  </div>
+</section>
+
+<section id="projects" class="sec">
+  <h2 data-reveal>Featured projects</h2>
+  <p data-reveal class="note">Projects marked "Demo" are planned or in progress. Edit them in <code>js/main.js</code>.</p>
+  <div class="grid three" id="project-grid"></div>
+</section>
+
+<section id="education" class="sec">
+  <h2 data-reveal>Education</h2>
+  <article class="card edu" data-reveal>
+    <span class="dot" aria-hidden="true"></span>
+    <h3>B.Voc in Internet of Things (IoT)</h3>
+    <p>Dayalbagh Educational Institute, Agra</p>
+    <p class="muted">2025 – 2028</p>
+  </article>
+</section>
+
+<section id="contact" class="sec">
+  <h2 data-reveal>Contact</h2>
+  <div class="grid two">
+    <div data-reveal class="card">
+      <p>Open to conversations about IoT, data and learning opportunities.</p>
+      <ul class="links">
+        <li><a href="mailto:your.email@example.com">your.email@example.com</a> <span class="muted">(placeholder)</span></li>
+        <li><a href="https://github.com/YOUR-USERNAME" target="_blank" rel="noopener">GitHub: YOUR-USERNAME</a> <span class="muted">(placeholder)</span></li>
+        <li><a href="https://www.linkedin.com/in/YOUR-PROFILE" target="_blank" rel="noopener">LinkedIn: YOUR-PROFILE</a> <span class="muted">(placeholder)</span></li>
+      </ul>
+    </div>
+    <form id="form" data-reveal class="card" novalidate>
+      <label for="f-name">Name</label><input id="f-name" name="name" autocomplete="name" required>
+      <small class="err" id="e-name" role="alert"></small>
+      <label for="f-email">Email</label><input id="f-email" name="email" type="email" autocomplete="email" required>
+      <small class="err" id="e-email" role="alert"></small>
+      <label for="f-msg">Message</label><textarea id="f-msg" name="message" rows="5" required></textarea>
+      <small class="err" id="e-msg" role="alert"></small>
+      <button class="btn primary" type="submit">Send message</button>
+      <p id="form-status" role="status"></p>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer>
+  <p>© <span id="year"></span> Rinku Goyal</p>
+  <p class="foot-links"><a href="https://github.com/YOUR-USERNAME" target="_blank" rel="noopener">GitHub</a><a href="https://www.linkedin.com/in/YOUR-PROFILE" target="_blank" rel="noopener">LinkedIn</a></p>
+  <div class="signal" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="js/scene.js"></script>
+<script src="js/animations.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
